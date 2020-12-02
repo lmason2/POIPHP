@@ -62,9 +62,9 @@
 
     <!-- MAIN -->
     <section id="MAIN">
-        <form method = "POST" action = "" name = "action">
+        <form method = "POST" name = "action">
             <label for = "lat">Latitude: </label>
-                <select name="lat" id="lat">
+                <select name = "lat" id = "lat">
                     <option value="47.662">47.662</option>
                     <option value="47.663">47.663</option>
                     <option value="47.664">47.664</option>
@@ -167,7 +167,7 @@
 
             if(isset($_POST['lat'])) {
                 $latitude = $_POST['lat'];
-                $longitude = $_POST['lon'];
+                $longitude = $_POST['long'];
                 $radius = $_POST['radius'];
                 runPOIFunction($latitude, $longitude, $radius);
             }
@@ -184,7 +184,7 @@
         crossorigin="anonymous">
     </script>
 
-    // Attempt at doing timer for internal javascript  
+
     <!-- <script>
         $lat = 47;
         $long = -117;
